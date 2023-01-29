@@ -1,7 +1,17 @@
-@import 'mixins.sass'
-
 header 
-    +flexCenterRow()
     background-color: var(--pink)
+    display: flex
+    align-items: center        
+    justify-content: space-between
+    box-shadow: inset 0px -10px 10px 0px white
+    h1
+        font-family: 'Quicksand', sans-serif
+        font-size: .8rem
+    h2
+        font-size: 1.5rem
     h1, h2
-        +flexCenterRow()
+        margin: 5px
+        p
+            padding: 5px
+            a, a:visited 
+                text-decoration: none
