@@ -1,22 +1,24 @@
 header 
     background-color: var(--pink)
     display: flex
+    height: 5rem
     align-items: center        
     justify-content: space-between
-    box-shadow: inset 0px -10px 10px 0px white
+    box-shadow: inset 0 -0.5em .5em 0 white
     h1
         font-family: 'Quicksand', sans-serif
-        font-size: .8rem
+        font-size: .8em
     h2
-        font-size: 1.5rem
+        font-size: 1.5em
         +userSelectDisabled
         transition: .8s
         p:hover 
             transform: scale(1.2)
             transition: .8s
     h1, h2
-        margin: 5px
+        margin: .5em
+        z-index: 1
         p
-            padding: 5px
+            padding: .2em
             a, a:visited 
                 text-decoration: none
