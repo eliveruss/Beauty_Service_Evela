@@ -1,0 +1,89 @@
+nav
+    margin-bottom: 2%
+    .menu
+        display: flex
+        justify-content: space-around 
+        align-items: center
+        .logo
+            width: 75%
+        .burger
+            width: fit-content
+            height: fit-content
+            border: none
+            background: none
+            cursor: pointer
+            z-index: 2
+            +userSelectDisabled()
+            .bar
+                display: block
+                width: 25px
+                height: 2px
+                border-radius: 5px
+                background-color: var(--pink)
+                margin: 4px auto
+                transition: .8s
+        .burger:hover .bar
+            background-color: black
+        .burger.active .bar
+            background-color: white
+        .burger.active .bar:nth-child(1)
+            transform: translateX(-200%) scale(0)
+        .burger.active .bar:nth-child(2) 
+            transform: translateY(3px) rotate(-45deg)
+        .burger.active .bar:nth-child(3) 
+            transform: translateY(-3px) rotate(45deg)
+    .navigation
+        +flexCenter()
+        flex-direction: column
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 100%
+        background: rgba(220, 120, 180, 0)
+        transition: .8s
+        overflow: hidden
+        ul
+            display: flex
+            justify-content: space-around
+            align-items: center
+            flex-direction: column
+            height: 100%
+            li
+                font-family: 'Quicksand', sans-serif
+                color: white
+                transition: .2s
+                font-size: 1.8rem
+                +userSelectDisabled()
+                transform: translateX(-100vw)
+        li:hover
+            transform: scale(1.2)
+            transition: .8s
+    .navigation.active
+        transform: translateX(0)
+        background: rgba(220, 120, 180, .8)
+        backdrop-filter: blur(2px)
+        transition: .8s
+        z-index: 1
+    .navigation.active li 
+        transform: translateX(0)
+        transition: .8s
+    .navigation.active li:hover
+            transform: scale(1.2)
+            transition: .8s
+    .burgerIcon
+        height: 10%
+        transform: translateY(-100vh)
+        transition: .8s
+    .navigation.active .burgerIcon
+        transform: translateY(0)
+        transition: .8s
+    .burgerLogo
+        height: 10%
+        transform: translateX(100vw)
+        transition: .8s
+    .navigation.active .burgerLogo
+        transform: translateX(0)
+        transition: .8s
+
+
