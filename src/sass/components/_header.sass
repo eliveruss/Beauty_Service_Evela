@@ -1,15 +1,16 @@
+@use '../util' as u
 header 
-    background-color: var(--pink)
+    background-color: u.$pink
     display: flex
     height: 5rem
     align-items: center        
     justify-content: space-between
-    box-shadow: inset 0 -0.5em .5em 0 var(--gray)
+    box-shadow: inset 0 -0.5em .5em 0 u.$gray
     h1
         font-family: 'Quicksand', sans-serif
         font-size: .8em
     h2
-        +userSelectDisabled()
+        @include u.userSelectDisabled
         font-size: 1.5em
         transition: .8s
         p:hover 

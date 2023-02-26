@@ -1,3 +1,4 @@
+@use '../util' as u
 nav
     margin-bottom: 2%
     .menu
@@ -13,13 +14,13 @@ nav
             background: none
             cursor: pointer
             z-index: 2
-            +userSelectDisabled()
+            @include u.userSelectDisabled
             .bar
                 display: block
                 width: 25px
                 height: 2px
                 border-radius: 5px
-                background-color: var(--pink)
+                background-color: u.$pink
                 margin: 4px auto
                 transition: .8s
         .burger:hover .bar
@@ -33,7 +34,7 @@ nav
         .burger.active .bar:nth-child(3) 
             transform: translateY(-3px) rotate(45deg)
     .navigation
-        +flexCenter()
+        @include u.flexCenter
         flex-direction: column
         position: absolute
         left: 0
@@ -54,7 +55,7 @@ nav
                 color: white
                 transition: .2s
                 font-size: 1.8rem
-                +userSelectDisabled()
+                @include u.userSelectDisabled
                 transform: translateX(-100vw)
         li:hover
             transform: scale(1.2)

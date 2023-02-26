@@ -1,9 +1,10 @@
+@use '../util' as u
 footer
-    +flexCenter
+    @include u.flexCenter
     margin-top: auto
     background-color: black
-    color: var(--pink)
-    font-family: 'Cinzel', serif
+    color: u.$pink
+    font-family: u.$altFont
     font-size: .7rem
     text-align: center
     padding: 3%
