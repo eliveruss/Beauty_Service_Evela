@@ -36,7 +36,7 @@ nav
     .navigation
         @include u.flexCenter
         flex-direction: column
-        position: absolute
+        position: fixed
         left: 0
         top: 0
         height: 100%
@@ -84,7 +84,7 @@ nav
         transform: translateX(100vw)
         transition: .8s
     .navigation.active .burgerLogo
-        transform: translateX(0)
+        transform: translateX(0) scale(.8)
         transition: .8s
 
 

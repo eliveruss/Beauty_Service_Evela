@@ -15,7 +15,8 @@
 </head>
 
 <body>
-    <header>
+    <!-- Contact informations -->
+    <header id="top">
         <h1>
             <p><i class="fas fa-map-marked-alt"></i> ul. Ogrodnicza 1, 83-021 Wiślina</p>
             <p><i class="fas fa-envelope"></i> patrykhubertkuba@wp.pl</p>
@@ -28,16 +29,20 @@
                         class="fa fa-brands fa-instagram"></i></a></p>
         </h2>
     </header>
+    <!-- Navigation container with logo and burger -->
     <nav>
         <div class="menu">
             <img class="logo" src="images/logo/logo3colorIcon.png" alt="">
             <button class="burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <a href="#top">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
             </button>
         </div>
         <div class="navigation">
+            <!-- Popup menu -->
             <ul>
                 <img class="burgerIcon" src="images/logo/whiteIcon.png" alt="">
                 <li><a href="#">Home</a></li>
@@ -49,13 +54,29 @@
             </ul>
         </div>
     </nav>
+    <!-- Home content -->
     <section>
-        <img src="images/ownerNoBg.png" alt="">
+        <img class="hidden" src="images/ownerNoBg.png" alt="">
         <div class="main-container">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <p>consectetur adipisicing elit. A hic nulla, in ea dolores  tempora quam illo, possimus quis accusantium, mollitia totam deleniti quis magni laboriosam. Asperiores, pariatur dicta.</p>
+            <h1 class="hidden">Ewelina Łodzińska</h1>
+            <p class="hidden">Stylistyka rzęs i brwi, makijaż permanentny, keratynowe prostowanie włosów i depilacja woskiem</p>
         </div>
     </section>
+    <!-- Products and cosmetics -->
+    <article>
+        <img class="hidden" src="images/tweezer.png" alt="">
+        <h3 class="hidden">Najlepsze produkty i sprawdzone marki</h3>
+        <div class="hidden">
+            <p>Do rzęs</p>
+            <img class="hidden" src="images/cosmetics/lashes.png" alt="">
+            <img class="hidden" src="images/cosmetics/lashesLamination.png" alt="">
+        </div>
+        <div class="hidden">
+            <p>Do włosów</p>
+            <img class="hidden" src="images/cosmetics/hairCosmetics.png" alt="">
+            <img class="hidden" src="images/cosmetics/keratin.png" alt="">
+        </div>
+    </article>
     <!-- <div class="swiper-container">
         <div class="swiper">
             <img src="images/room.jpg" alt="" class="room">
