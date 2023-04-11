@@ -76,5 +76,33 @@ article
             border-bottom: 1px solid u.$pink
             font-family: u.$mainFont
             font-size: 130%
-
-            
+    .reviews-container
+        height: 30vh
+        width: 90%
+        .review-slide
+            display: none
+            height: 100%
+        .review-slide.open
+            display: block
+            .review-box
+                height: 100%
+                border: 1px solid u.$pink 
+                border-radius: 10px
+                background-color: white
+                margin: auto
+    #next, #prev
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 1.5em
+        height: 1.5em
+        line-height: 1.5em
+        background-color: u.$pink
+        color: white
+        border: 1px solid u.$pink
+        border-radius: 50%
+        font-size: 1.5em
+    #next
+        right: 5%
+    #prev
+        left: 5%

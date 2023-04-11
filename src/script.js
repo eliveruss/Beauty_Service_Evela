@@ -42,3 +42,20 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+let reviews = document.querySelectorAll('.review-slide');
+let index = 0;
+
+function next() {
+    reviews[index].classList.remove('open');
+    index = (index + 1) % reviews.length;
+    reviews[index].classList.add('open');
+
+}
+
+function prev() {
+    reviews[index].classList.remove('open');
+    index = (index - 1 + reviews.length) % reviews.length;
+    reviews[index].classList.add('open');
+
+}
