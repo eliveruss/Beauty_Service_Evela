@@ -10,16 +10,26 @@ function burgerActive() {
 
 burgerBtn.addEventListener('click', burgerActive);
 
+const links = document.querySelectorAll('a[data-subpage]');
+const subpages = document.querySelectorAll('.subpage');
 
+function switchSubpage(event) {
+    event.preventDefault();
+    const subpageId = event.target.getAttribute('data-subpage');
 
-const swiper = new Swiper('.swiper', {
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
-    loop: true,
+    subpages.forEach(subpage => {
+        if (subpage.id === subpageId) {
+            subpage.classList.remove('notDisplay');
+        } else {
+            subpage.classList.add('notDisplay');
+        }
+    });
+    burgerActive();
+}
+
+links.forEach(link => {
+    link.addEventListener('click', switchSubpage);
 });
-
 
 
 const observer = new IntersectionObserver((entries) => {

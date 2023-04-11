@@ -45,54 +45,86 @@
             <!-- Popup menu -->
             <ul>
                 <img class="burgerIcon" src="images/logo/whiteIcon.png" alt="">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Oferta</a></li>
-                <li><a href="#">Cennik</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" data-subpage="subpage1" >Home</a></li>
+                <li><a href="#" data-subpage="subpage2" >Oferta</a></li>
+                <li><a href="#" data-subpage="subpage3" >Cennik</a></li>
+                <li><a href="#" data-subpage="subpage4" >Galeria</a></li>
+                <li><a href="#" data-subpage="subpage5" >Kontakt</a></li>
                 <img class="burgerLogo" src="images/logo/logoWhite.png" alt="">
             </ul>
         </div>
     </nav>
     <!-- Home content -->
-    <section>
-        <img class="hidden" src="images/ownerNoBg.png" alt="">
-        <div class="main-container">
-            <h1 class="hidden">Ewelina Łodzińska</h1>
-            <p class="hidden">Stylistyka rzęs i brwi, makijaż permanentny, keratynowe prostowanie włosów i depilacja woskiem</p>
+    <div class="subpage" id="subpage1">
+        <section>
+            <img src="images/ownerNoBg.png" alt="">
+            <div class="main-container">
+                <h1 class="hidden">Ewelina Łodzińska</h1>
+                <p class="hidden">Stylistyka rzęs i brwi, makijaż permanentny, keratynowe prostowanie włosów i depilacja woskiem</p>
+                <img class="hidden" src="images/tweezer.png" alt="">
+            </div>
+        </section>
+        <div class="description hidden">
+            <p>Szukasz kameralnego gabinetu kosmetycznego, w którym nie tylko zadbasz o swoją urodę, ale również odprężysz się i znajdziesz chwilę wyciszenia? Dobrze trafiłaś! Wybierz interesującą Cię usługę i umów się na wizytę!</p>
         </div>
-    </section>
-    <!-- Products and cosmetics -->
-    <article>
-        <img class="hidden" src="images/tweezer.png" alt="">
-        <h3 class="hidden">Najlepsze produkty i sprawdzone marki</h3>
-        <div class="hidden">
-            <p>Do rzęs</p>
-            <img class="hidden" src="images/cosmetics/lashes.png" alt="">
-            <img class="hidden" src="images/cosmetics/lashesLamination.png" alt="">
-        </div>
-        <div class="hidden">
-            <p>Do włosów</p>
-            <img class="hidden" src="images/cosmetics/hairCosmetics.png" alt="">
-            <img class="hidden" src="images/cosmetics/keratin.png" alt="">
-        </div>
-    </article>
-    <!-- <div class="swiper-container">
-        <div class="swiper">
-            <img src="images/room.jpg" alt="" class="room">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/swiper/slide1.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper/slide2.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper/slide3.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper/slide4.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper/slide5.png" alt=""></div>
+        <!-- Products and cosmetics -->
+        <article>
+            <h3 class="hidden">Umiejętności poparte certyfikatami oraz opiniami klientów</h3>
+                <ul class="reviews-container hidden">
+                    <li class="review-box">
+                        <h6 class="rev-name">Hanna</h6>
+                        <p class="rev-text">Piękne rzęski. Polecam z czystym sumieniem.</p>
+                    </li>
+                    <li class="review-box">
+                        <h6 class="rev-name">Sara</h6>
+                        <p class="rev-text">Gorąco polecam. Pełen profesjonalizm, miła atmosfera, a rzęski zawsze piękne.</p>
+                    </li>
+                    <li class="review-box">
+                        <h6 class="rev-name">Monika</h6>
+                        <p class="rev-text">Polecam, włosy są przecudowne!</p>
+                    </li>
+                </ul>
+            <h3 class="hidden">Najlepsze produkty i sprawdzone marki</h3>
+            <div class="hidden">
+                <p>Do rzęs</p>
+                <img class="hidden" src="images/cosmetics/lashes.png" alt="">
+                <img class="hidden" src="images/cosmetics/lashesLamination.png" alt="">
+            </div>
+            <div class="hidden">
+                <p>Do włosów</p>
+                <img class="hidden" src="images/cosmetics/hairCosmetics.png" alt="">
+                <img class="hidden" src="images/cosmetics/keratin.png" alt="">
+            </div>
+        </article>
+    </div>
+    <div class="subpage notDisplay" id="subpage2">
+        <div class="offer">
+            <div class="service">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="service">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="service">
+                <img src="" alt="">
+                <p></p>
             </div>
         </div>
-    </div> -->
+    </div>
+    <div class="subpage notDisplay" id="subpage3">
+        cennik
+    </div>
+    <div class="subpage notDisplay" id="subpage4">
+        Galeria
+    </div>
+    <div class="subpage notDisplay" id="subpage5">
+        Kontakt
+    </div>
     <footer>
         <p>Copyright &copy; 2023 Beauty Service Evela</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
