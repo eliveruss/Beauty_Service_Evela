@@ -27,13 +27,11 @@ section
             font-size: 1.1rem
         p
             font-family: u.$mainFont
-            padding: 5px
         img
             position: absolute
             right: 0
             bottom: 10%
             z-index: -5
-            filter: brightness(90%)
             filter: drop-shadow(0 -5px 7px rgb(100, 100, 100))
         img.hidden 
             transform: translateX(30vw)
@@ -49,13 +47,13 @@ section
         box-shadow: 0px -1rem .5rem 2rem u.$gray
         z-index: -1
 .description
-    position: relative
     font-family: u.$mainFont
     text-align: center
     font-size: 110%
     padding: 5%
     margin: 10%
     border: 1px solid u.$pink
+
 article
     @include u.flexCenter
     flex-direction: column
@@ -82,7 +80,7 @@ article
     .reviews-container
         height: 15vh
         width: 90%
-        margin-bottom: 10%
+        margin-bottom: 15%
         padding: 2%
         .review-slide
             display: none
@@ -97,9 +95,10 @@ article
                 padding: 3%
                 height: 100%
                 width: 80%
+                background: linear-gradient(170deg,rgba(220,120,180,0.7) 20%, rgba(255,255,255,0.8) 95%)
                 margin: auto
-                background-color: white
                 transition: .8s
+                border-radius: 1rem
                 box-shadow: 0 0 .5em .5em darkgrey
                 .rev-name
                     font-size: 1em
@@ -112,8 +111,8 @@ article
             position: absolute
             top: 50%
             transform: translateY(-50%)
-            width: 1.5em
-            height: 1.5em
+            width: 2em
+            height: 2em
             line-height: 1.5em
             color: u.$pink
             font-size: 1.5em
@@ -127,9 +126,10 @@ article
             left: 0
         a
             display: block
+            width: fit-content
+            margin: auto
             margin-top: 5%
             transition: .8s
-
         a:hover 
             color: u.$pink
     .container
@@ -138,9 +138,10 @@ article
         position: relative
         height: 100%
         overflow: hidden
-        border-radius: 1rem
         --position: 10%
         margin-bottom: 10%
+        border: 1px solid u.$pink
+        box-shadow: 0 0 .5rem .5rem darkgray
         .image-container
             max-width: 80vw
             height: 100%
@@ -191,3 +192,4 @@ article
         .slider:focus-visible ~ .slider-button
             outline: 5px solid black
             outline-offset: 3px
+    
