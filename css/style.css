@@ -27,14 +27,19 @@ header h2 p:hover {
   transform: scale(1.2);
   transition: 0.8s;
 }
-header h1, header h2 {
+header h1,
+header h2 {
   margin: 0.5em;
   z-index: 1;
 }
-header h1 p, header h2 p {
+header h1 p,
+header h2 p {
   padding: 0.2em;
 }
-header h1 p a, header h1 p a:visited, header h2 p a, header h2 p a:visited {
+header h1 p a,
+header h1 p a:visited,
+header h2 p a,
+header h2 p a:visited {
   text-decoration: none;
 }
 
@@ -288,7 +293,8 @@ article .reviews-container .review-slide.open .review-box .rev-text {
   font-size: 0.8em;
   font-family: "Quicksand";
 }
-article .reviews-container #next, article .reviews-container #prev {
+article .reviews-container #next,
+article .reviews-container #prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -300,7 +306,8 @@ article .reviews-container #next, article .reviews-container #prev {
   border: none;
   background: none;
 }
-article .reviews-container #next:hover, article .reviews-container #prev:hover {
+article .reviews-container #next:hover,
+article .reviews-container #prev:hover {
   color: black;
 }
 article .reviews-container #next {
@@ -350,7 +357,7 @@ article .container .slider {
   cursor: pointer;
   opacity: 0;
   width: 100%;
-  heigth: 100%;
+  height: 100%;
   z-index: 3;
 }
 article .container .slider-line {
