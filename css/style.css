@@ -150,6 +150,23 @@ nav .navigation.active .burgerLogo {
   transition: 0.8s;
 }
 
+.tweezer {
+  position: absolute;
+  right: 0;
+  max-width: 60vw;
+  z-index: -5;
+}
+
+.tweezer.hidden {
+  transform: translateX(60vw);
+  opacity: 0;
+}
+
+.tweezer.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 section {
   position: relative;
   display: flex;
@@ -186,22 +203,6 @@ section .main-container h1 {
 }
 section .main-container p {
   font-family: "Quicksand";
-}
-section .main-container img {
-  position: absolute;
-  right: 0;
-  bottom: 10%;
-  z-index: -5;
-  filter: drop-shadow(0 -5px 7px rgb(100, 100, 100));
-}
-section .main-container img.hidden {
-  transform: translateX(30vw);
-}
-section .main-container img.show {
-  transform: translateX(0);
-}
-section .main-container .show {
-  transform: translateX(0);
 }
 section::after {
   content: "";

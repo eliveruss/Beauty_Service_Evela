@@ -1,4 +1,15 @@
 @use '../util' as u
+.tweezer
+    position: absolute
+    right: 0
+    max-width: 60vw
+    z-index: -5
+.tweezer.hidden
+    transform: translateX(60vw)
+    opacity: 0
+.tweezer.show
+    transform: translateX(0)
+    opacity: 1
 section
     position: relative
     display: flex
@@ -27,18 +38,6 @@ section
             font-size: 1.1rem
         p
             font-family: u.$mainFont
-        img
-            position: absolute
-            right: 0
-            bottom: 10%
-            z-index: -5
-            filter: drop-shadow(0 -5px 7px rgb(100, 100, 100))
-        img.hidden 
-            transform: translateX(30vw)
-        img.show 
-            transform: translateX(0)
-        .show     
-            transform: translateX(0)
     &::after
         content: ''
         position: absolute
