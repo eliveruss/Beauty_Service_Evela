@@ -138,20 +138,23 @@ article
         position: relative
         overflow: hidden
         --position: 10%
+        margin-bottom: 5%
         border: 1px solid u.$pink
         box-shadow: 0 0 .5rem .5rem darkgray
         .image-container
-            max-width: 800px
-            max-height: 90vh
+            max-width: 70vw
             aspect-ratio: 1/1
             .slider-image
+                display: block
                 width: 100%
                 height: 100%
                 object-fit: cover
                 object-position: left
+                inset: 0
+                top: 0
+                left: 0
             .image-after
                 position: absolute
-                inset: 0
                 width: var(--position)
         .slider
             position: absolute
@@ -180,12 +183,11 @@ article
             top: 50%
             left: var(--position)
             transform: translate(-50%, -50%)
-            background-color: #fff
+            background-color: u.$gray
             color: black
-            padding: .5rem
             border-radius: 100vw
             z-index: 2
-            border: .3rem solid u.$pink
+            border: .5rem solid u.$pink
             cursor: pointer
         .slider:focus-visible ~ .slider-button
             outline: 5px solid black
