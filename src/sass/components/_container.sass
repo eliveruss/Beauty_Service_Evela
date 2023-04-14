@@ -1,4 +1,15 @@
 @use '../util' as u
+.tweezer
+    position: absolute
+    right: 0
+    max-width: 60vw
+    z-index: -5
+.tweezer.hidden
+    transform: translateX(60vw)
+    opacity: 0
+.tweezer.show
+    transform: translateX(0)
+    opacity: 1
 section
     position: relative
     display: flex
@@ -27,18 +38,6 @@ section
             font-size: 1.1rem
         p
             font-family: u.$mainFont
-        img
-            position: absolute
-            right: 0
-            bottom: 10%
-            z-index: -5
-            filter: drop-shadow(0 -5px 7px rgb(100, 100, 100))
-        img.hidden 
-            transform: translateX(30vw)
-        img.show 
-            transform: translateX(0)
-        .show     
-            transform: translateX(0)
     &::after
         content: ''
         position: absolute
@@ -136,24 +135,25 @@ article
         display: grid
         place-content: center
         position: relative
-        height: 100%
         overflow: hidden
         --position: 10%
-        margin-bottom: 10%
+        margin-bottom: 5%
         border: 1px solid u.$pink
         box-shadow: 0 0 .5rem .5rem darkgray
         .image-container
-            max-width: 80vw
-            height: 100%
-            overflow: hidden
+            max-width: 70vw
+            aspect-ratio: 1/1
             .slider-image
+                display: block
                 width: 100%
                 height: 100%
                 object-fit: cover
                 object-position: left
+                inset: 0
+                top: 0
+                left: 0
             .image-after
                 position: absolute
-                inset: 0
                 width: var(--position)
         .slider
             position: absolute
@@ -182,12 +182,11 @@ article
             top: 50%
             left: var(--position)
             transform: translate(-50%, -50%)
-            background-color: #fff
+            background-color: u.$gray
             color: black
-            padding: .5rem
             border-radius: 100vw
             z-index: 2
-            border: .3rem solid u.$pink
+            border: .5rem solid u.$pink
             cursor: pointer
         .slider:focus-visible ~ .slider-button
             outline: 5px solid black
