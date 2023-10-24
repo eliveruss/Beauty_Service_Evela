@@ -1,0 +1,36 @@
+@mixin flexCenterRow
+    display: flex
+    justify-content: center 
+    align-items: center
+    flex-direction: row 
+    
+@mixin flexCenterColumn
+    display: flex
+    justify-content: center 
+    align-items: center 
+    flex-direction: column
+
+@mixin flexBetweenRow
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    flex-direction: row
+
+@mixin flexAroundColumn 
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: column
+
+@mixin userSelectDisabled
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+@mixin window 
+    box-shadow: -1px -1px 2px 2px black
+    border-radius: 0 0 50px 50px
+    filter: drop-shadow(-5px -2px 2px black)

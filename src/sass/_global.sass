@@ -1,0 +1,44 @@
+@use 'util' as u
+
+:root 
+    font-size: 16px
+    line-height: 20px
+    scroll-behavior: smooth
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    min-width: 285px
+    background-color: u.$gray
+    font-family: u.$mainFont
+    text-align: center
+.scroll-disabled 
+    overflow: hidden
+button:focus-visible, li a:focus-visible, .header__right a:focus-visible, .slider__bar:focus-visible ~ .slider__button, .content__reviews-container a:focus-visible, #gallery-close:focus-visible, #gallery-next:focus-visible, #gallery-prev:focus-visible
+    outline: 2px solid rgb(30, 255, 0)
+    padding: 2px
+.smooth-loading
+    opacity: 0
+    transition: all .8s ease
+    transform: translate(0, 5vh)
+    filter: blur(5px)
+.shown-up
+    opacity: 1
+    transform: translate(0, 0)
+    filter: unset
+.subpages
+    max-width: 90%
+    margin-left: auto
+    margin-right: auto
+    &__subpage
+        display: none
+        &--displayed
+            display: unset
+@media screen and (min-width: 600px)
+    .subpages
+        max-width: 80%
+.content
+    section>*
+        margin-bottom: 5em
+.hidden
+    display: none
