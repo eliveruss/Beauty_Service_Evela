@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="beauty, service, evela, lodzinska, łodzińska, ewelina, rzęsy, kosmetyka, keratyna, włosy, prostowanie włosów, keratynowe, wiślina, pruszcz gdański, gdańsk, brwi, permamentne, usta, henna, salon piękności, ogrodnicza, lashes, eyebrows, hair, keratin"
+    />
+    <link rel="shortcut icon" href="images/logo/favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/45e2f5a598.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Beauty Service Evela</title>
+  </head>
+  <body>
+    <!-- Adress bar -->
+    <header class="header">
+      <div class="header__left">
+        <p>
+          <i class="fas fa-map-marked-alt"></i> ul. Ogrodnicza 1, 83-021 Wiślina
+        </p>
+        <p><i class="fas fa-envelope"></i> patrykhubertkuba@wp.pl</p>
+        <p><i class="fas fa-phone-alt"></i> 793 177 125</p>
+      </div>
+      <div class="header__right">
+        <p>
+          <a href="https://www.facebook.com/BeautyServiceEvela" target="_blank"
+            ><i class="fa fa-brands fa-facebook-square"></i
+          ></a>
+        </p>
+        <p>
+          <a
+            href="https://www.instagram.com/beauty_service_evela/"
+            target="_blank"
+            ><i class="fa fa-brands fa-instagram"></i
+          ></a>
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigation container with logo and burger -->
+    <nav class="nav">
+      <div class="nav__logo-and-burger">
+        <img
+          class="nav__logo"
+          src="images/logo/logo3colorIcon.png"
+          alt="logo"
+        />
+        <button class="nav__burger">
+          <a href="#top">
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+          </a>
+        </button>
+      </div>
+      <div class="nav__menu">
+        <ul>
+          <img
+            class="nav__menu-img nav__menu-img--top"
+            src="images/logo/whiteIcon.png"
+            alt="ikona rzęs"
+          />
+          <li><a href="#" data-subpage="subpage1">Home</a></li>
+          <li><a href="#" data-subpage="subpage2">Cennik</a></li>
+          <li><a href="#" data-subpage="subpage3">Galeria</a></li>
+          <li><a href="#" data-subpage="subpage4">Kontakt</a></li>
+          <img
+            class="nav__menu-img nav__menu-img--bottom"
+            src="images/logo/logoWhite.png"
+            alt="logo"
+          />
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="subpages">
+      <!-- Home subpage -->
+      <div class="subpages__subpage subpages__subpage--displayed" id="subpage1">
+        <img
+          class="tweezer smooth-loading"
+          src="images/tweezer.png"
+          alt="pęseta"
+        />
+
+        <aside class="introduction">
+          <img
+            class="introduction__owner-img smooth-loading"
+            src="images/ownerNoBg.png"
+            alt="portret właścicielki"
+          />
+          <div class="introduction__text smooth-loading">
+            <h1>Ewelina Łodzińska</h1>
+            <p>
+              Stylistyka rzęs i brwi, makijaż permanentny, keratynowe
+              prostowanie włosów i depilacja woskiem
+            </p>
+          </div>
+        </aside>
+
+        <article class="content">
+          <section class="content__welcome-text smooth-loading">
+            <p>
+              Szukasz kameralnego gabinetu kosmetycznego, w którym nie tylko
+              zadbasz o swoją urodę, ale również odprężysz się i znajdziesz
+              chwilę wyciszenia? Dobrze trafiłaś! Wybierz interesującą Cię
+              usługę i umów się na wizytę!
+            </p>
+          </section>
+
+          <section class="content__slider slider smooth-loading">
+            <h2 class="content__heading">Efekt taki, o jakim marzysz</h2>
+            <div class="slider__container">
+              <div class="slider__images">
+                <img
+                  class="slider__image slider__image--after"
+                  src="images/before_after/after.png"
+                  alt="rzęsy po zabiegu"
+                />
+                <img
+                  class="slider__image slider__image--before"
+                  src="images/before_after/before.png"
+                  alt="rzęsy przed zabiegiem"
+                />
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="10"
+                class="slider__bar"
+                aria-label="Percentage of before photo shown"
+              />
+              <div class="slider__line"></div>
+              <div class="slider__button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </section>
+
+          <section class="content__cosmetics smooth-loading">
+            <h2 class="content__heading">
+              Wykorzystujemy najlepsze produkty i sprawdzone marki
+            </h2>
+            <div class="content__products">
+              <p>Do rzęs</p>
+              <img src="images/cosmetics/lashes.png" alt="używane produkty" />
+              <img
+                src="images/cosmetics/lashesLamination.png"
+                alt="używane produkty"
+              />
+            </div>
+            <div class="content__products smooth-loading">
+              <p>Do włosów</p>
+              <img
+                src="images/cosmetics/hairCosmetics.png"
+                alt="używane produkty"
+              />
+              <img src="images/cosmetics/keratin.png" alt="używane produkty" />
+            </div>
+          </section>
+          <section class="content__reviews smooth-loading">
+            <h2 class="content__heading">
+              Umiejętności poparte certyfikatami oraz opiniami klientów
+            </h2>
+            <div class="content__reviews-container smooth-loading">
+              <div class="review-slide open">
+                <h3>
+                  <i class="fa-sharp fas fa-star"></i> Marcelina C.
+                  <i class="fa-sharp fas fa-star"></i>
+                </h3>
+                <p>"Polecam z całego serducha."</p>
+                <p>13 czerwca 2023r.</p>
+              </div>
+              <div class="review-slide">
+                <h3>
+                  <i class="fa-sharp fas fa-star"></i> Anna B.
+                  <i class="fa-sharp fas fa-star"></i>
+                </h3>
+                <p>
+                  "Laminacja brwi i rzęs rewelacja. Polecam serdecznie Ewelinę,
+                  zawsze perfekcyjne wykonanie i przemiła obsługa plus
+                  elastyczna i dostosuje się do każdego życzenia klienta."
+                </p>
+                <p>13 marca 2021r.</p>
+              </div>
+              <div class="review-slide">
+                <h3>
+                  <i class="fa-sharp fas fa-star"></i> Hanna S.
+                  <i class="fa-sharp fas fa-star"></i>
+                </h3>
+                <p>"Piękne rzęski. Polecam z czystym sumieniem."</p>
+                <p>16 września 2020r.</p>
+              </div>
+              <div class="review-slide">
+                <h3>
+                  <i class="fa-sharp fas fa-star"></i> Sara B.
+                  <i class="fa-sharp fas fa-star"></i>
+                </h3>
+                <p>
+                  Gorąco polecam. Pełen profesjonalizm, miła atmosfera, a rzęski
+                  zawsze piękne.
+                </p>
+                <p>16 września 2020r.</p>
+              </div>
+              <div class="review-slide">
+                <h3>
+                  <i class="fa-sharp fas fa-star"></i> Monia K.
+                  <i class="fa-sharp fas fa-star"></i>
+                </h3>
+                <p>Polecam, włosy są przecudowne!</p>
+                <p>9 lutego 2020r.</p>
+              </div>
+              <button id="next" class="fas fa-chevron-right"></button>
+              <button id="prev" class="fas fa-chevron-left"></button>
+              <a
+                href="https://m.facebook.com/BeautyServiceEvela/reviews"
+                target="_blank"
+                >Zobacz wszystkie opinie</a
+              >
+            </div>
+            <!-- <img
+              src="images/wallDiplomas.JPG"
+              alt="ściana z dyplomami"
+              class="content__diplomas-img"
+            /> -->
+          </section>
+        </article>
+      </div>
+
+      <!-- Other subpages -->
+      <div class="subpages__subpage" id="subpage2">
+        <article class="content">
+          <section class="content__prices-container">
+            <ul class="content__prices-list smooth-loading">
+              <img src="images/prices/lashes.jpg" alt="" />
+              <h3>Rzęsy</h3>
+              <li>
+                <p>1D-2D</p>
+                <p>120-140 zł</p>
+              </li>
+              <li>
+                <p>2D</p>
+                <p>130-150 zł</p>
+              </li>
+              <li>
+                <p>2D-3D</p>
+                <p>140-160 zł</p>
+              </li>
+              <li>
+                <p>3D</p>
+                <p>150-170 zł</p>
+              </li>
+              <li>
+                <p>3D-4D</p>
+                <p>160-180 zł</p>
+              </li>
+              <li>
+                <p>4D-5D</p>
+                <p>180-200 zł</p>
+              </li>
+              <li>
+                <p>Ściąganie rzęs po innej stylistce</p>
+                <p>40 zł</p>
+              </li>
+              <li>
+                <p>Laminacja rzęs</p>
+                <p>140 zł</p>
+              </li>
+              <li>
+                <p>Laminacja brwi</p>
+                <p>70 zł</p>
+              </li>
+              <li>
+                <p>Henna z regulacją</p>
+                <p>40 zł</p>
+              </li>
+              <li>
+                <p>Henna pudrowa</p>
+                <p>70 zł</p>
+              </li>
+              <li>
+                <p>Farbowanie rzęs</p>
+                <p>30 zł</p>
+              </li>
+            </ul>
+            <ul class="content__prices-list smooth-loading">
+              <img src="images/prices/hair.jpg" alt="" />
+              <h3>Keratynowe prostowanie włosów</h3>
+              <li>
+                <p>Włosy do ramion</p>
+                <p>250 zł</p>
+              </li>
+              <li>
+                <p>Włosy do łopatek</p>
+                <p>350 zł</p>
+              </li>
+              <li>
+                <p>Włosy do linii stanika</p>
+                <p>450 zł</p>
+              </li>
+              <li>
+                <p>Włosy do pasa</p>
+                <p>550 zł</p>
+              </li>
+              <li>
+                <p>Włosy do kości ogonowej</p>
+                <p>650 zł</p>
+              </li>
+              <div>
+                Do usługi może być doliczona kwota 50zł w zależności od grubości
+                i gęstości włosa
+              </div>
+            </ul>
+            <ul class="content__prices-list smooth-loading">
+              <img src="images/prices/permanent-makeup.jpg" alt="" />
+              <h3>Makijaż permanentny</h3>
+              <li>
+                <p>Brwi ombre/powder</p>
+                <p>700 zł</p>
+              </li>
+              <li>
+                <p>Usta</p>
+                <p>600 zł</p>
+              </li>
+              <li>
+                <p>Kreska na linii rzęs</p>
+                <p>300 zł</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+      <div class="subpages__subpage" id="subpage3">
+        <button id="gallery-next" class="hidden">></button>
+        <button id="gallery-prev" class="hidden"><</button>
+        <button id="gallery-close" class="hidden">X</button>
+        <h3 class="content__heading">Przedłużanie rzęs</h3>
+        <article
+          class="content__gallery content__gallery--lashes smooth-loading"
+        >
+          <section class="content__gallery-item img-1">
+            <img src="images/gallery/gallery-lashes/lashes (1).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-2">
+            <img src="images/gallery/gallery-lashes/lashes (2).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-3">
+            <img src="images/gallery/gallery-lashes/lashes (3).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-4">
+            <img src="images/gallery/gallery-lashes/lashes (4).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-5">
+            <img src="images/gallery/gallery-lashes/lashes (5).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-6">
+            <img src="images/gallery/gallery-lashes/lashes (6).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-7">
+            <img src="images/gallery/gallery-lashes/lashes (7).jpg" alt="" />
+          </section>
+        </article>
+        <h3 class="content__heading">Keratynowe prostowanie włosów</h3>
+        <article class="content__gallery content__gallery--hair smooth-loading">
+          <section class="content__gallery-item img-1">
+            <img src="images/gallery/gallery-hair/hair (1).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-2">
+            <img src="images/gallery/gallery-hair/hair (2).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-3">
+            <img src="images/gallery/gallery-hair/hair (3).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-4">
+            <img src="images/gallery/gallery-hair/hair (4).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-5">
+            <img src="images/gallery/gallery-hair/hair (5).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-6">
+            <img src="images/gallery/gallery-hair/hair (6).jpg" alt="" />
+          </section>
+          <section class="content__gallery-item img-7">
+            <img src="images/gallery/gallery-hair/hair (7).jpg" alt="" />
+          </section>
+        </article>
+        <h3 class="content__heading">
+          Regulacja, laminacja i makijaż permanentny brwi
+        </h3>
+        <article
+          class="content__gallery content__gallery--eyebrows smooth-loading"
+        >
+          <section class="content__gallery-item img-1">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (1).jpg"
+              alt=""
+            />
+          </section>
+          <section class="content__gallery-item img-2">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (2).jpg"
+              alt=""
+            />
+          </section>
+          <section class="content__gallery-item img-3">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (3).jpg"
+              alt=""
+            />
+          </section>
+          <section class="content__gallery-item img-4">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (4).jpg"
+              alt=""
+            />
+          </section>
+          <section class="content__gallery-item img-5">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (5).jpg"
+              alt=""
+            />
+          </section>
+          <section class="content__gallery-item img-6">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (6).jpg"
+              alt=""
+            />
+          </section>
+          <section class="content__gallery-item img-7">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (7).jpg"
+              alt=""
+            />
+          </section>
+          <section class="content__gallery-item img-8">
+            <img
+              src="images/gallery/gallery-eyebrows/eyebrows (8).jpg"
+              alt=""
+            />
+          </section>
+        </article>
+        <h3 class="content__heading">Makijaż permanentny ust</h3>
+        <article class="content__gallery content__gallery--lips smooth-loading">
+          <section class="content__gallery-item img-1">
+            <img src="images/gallery/gallery-lips/lips (1).png" alt="" />
+          </section>
+        </article>
+      </div>
+      <div class="subpages__subpage" id="subpage4">
+        <form
+          class="content__contact-form"
+          action="https://formsubmit.co/kontakt@aleksandergaldyn.pl"
+          method="POST"
+        >
+          <h3>Skontaktuj się z nami!</h3>
+          <div>
+            <input type="text" id="name" required />
+            <label for="name">Imię...</label>
+          </div>
+          <div>
+            <input type="email" id="email" required />
+            <label for="email">Email...</label>
+          </div>
+          <div>
+            <textarea id="message" rows="10" required></textarea>
+            <label for="message">Tekst wiadomości...</label>
+          </div>
+          <button type="submit">Wyślij</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright &copy; 2023 Beauty Service Evela</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
