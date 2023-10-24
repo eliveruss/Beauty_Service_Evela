@@ -1,0 +1,23 @@
+@use '../util' as u 
+
+.header
+    @include u.flexBetweenRow
+    margin-bottom: .5em
+    box-shadow: 0 0 .5em .5em u.$pink
+    background-color: u.$pink 
+    text-align: start
+    z-index: 1
+    &__left
+        margin: .5em
+        p
+            font-size: .9rem
+    &__right 
+        margin: .5em
+        p
+            font-size: 1.5rem
+            padding: .1em
+            transition: .3s
+            &:hover 
+                transform: scale(1.2)
+
+

@@ -1,0 +1,77 @@
+@use '../util' as u
+.nav
+    &__logo-and-burger
+        @include u.flexBetweenRow
+        padding: 2vw
+    &__logo
+         width: 75%
+    &__burger
+        cursor: pointer
+        z-index: 3
+    &__burger-bar
+        display: block
+        width: 25px
+        height: 2px
+        border-radius: 5px
+        background-color: u.$pink
+        margin: 4px auto
+        transition: .3s
+    &__burger:hover &__burger-bar
+        background-color: black
+    &__burger.active &__burger-bar
+        background-color: white
+        &:nth-child(1) 
+            transform: translateX(-200%) scale(0)
+        &:nth-child(2)
+            transform: translateY(3px) rotate(-45deg)
+        &:nth-child(3) 
+            transform: translateY(-3px) rotate(45deg)
+    &__burger.active:hover &__burger-bar
+        background-color: black
+    &__menu
+        display: none
+        position: fixed
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background: rgba(220, 120, 180, 0)
+        color: white
+        overflow: hidden
+        transition: .3s
+        z-index: 2
+        ul
+            @include u.flexAroundColumn
+            height: 100%
+            li
+                @include u.userSelectDisabled
+                font-size: 1.8rem
+                transform: translateX(-100vw)
+                transition: .3s
+                &:hover
+                    transform: scale(1.1)
+    &__menu-img
+        max-height: 10%
+        max-width: 90%
+        transition: .3s
+        &--top 
+            transform: translateY(-100vh)
+        &--bottom 
+            transform: translateX(100vw)
+    &__menu.active
+        background: rgba(220, 120, 180, .8)
+        -webkit-backdrop-filter: blur(2px)
+        backdrop-filter: blur(2px)
+        transition: .3s
+        li
+            transition: .3s
+            transform: translate(0)
+    &__menu.active &__menu-img
+            transform: translate(0)
+            transition: .3s
+@media screen and (min-width: 1000px)
+    .nav__logo
+        width: 50%
+@media screen and (min-width: 1600px)
+    .nav__logo
+        width: 30%
